@@ -26,6 +26,7 @@ var searchData=
   ['primitiveintersection_2ecu',['primitiveIntersection.cu',['../primitive_intersection_8cu.html',1,'']]],
   ['primitivetexturehastransparencychannel',['primitiveTextureHasTransparencyChannel',['../classhelios_1_1_context.html#a5e10a8afe134f4a55f65c81a9398c69c',1,'helios::Context']]],
   ['primitivetype',['PrimitiveType',['../_context_8h.html#aa2778fcacd9c556a5ce0d9de2ffc1601',1,'helios']]],
+  ['printobjectinfo',['printObjectInfo',['../classhelios_1_1_context.html#a963fbdd1d4c3d270d2eb8f49a22b274a',1,'helios::Context']]],
   ['printprimitiveinfo',['printPrimitiveInfo',['../classhelios_1_1_context.html#a355617da1f3faa4d01ca4d95425e9c0b',1,'helios::Context']]],
   ['printwindow',['printWindow',['../class_visualizer.html#ab42f12bed91baa9f2d8532cbe804be5b',1,'Visualizer::printWindow(void)'],['../class_visualizer.html#a1840b4285caa645e6b8b28144478cfe1',1,'Visualizer::printWindow(const char *outfile)']]]
 ];

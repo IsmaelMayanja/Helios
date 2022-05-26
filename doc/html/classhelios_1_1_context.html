@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="Helios_logo_small.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">.
-   &#160;<span id="projectnumber">v1.2.33</span>
+   &#160;<span id="projectnumber">v1.2.36</span>
    </div>
   </td>
  </tr>
@@ -445,6 +445,80 @@ std::vector&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a 
 <tr class="memitem:a1dafe58b3251d2ef9d09112258b2e85d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a1dafe58b3251d2ef9d09112258b2e85d">getPrimitiveArea</a> (uint UUID) const</td></tr>
 <tr class="memdesc:a1dafe58b3251d2ef9d09112258b2e85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the surface area of a Primitive.  <a href="#a1dafe58b3251d2ef9d09112258b2e85d">More...</a><br /></td></tr>
 <tr class="separator:a1dafe58b3251d2ef9d09112258b2e85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2e26ac2b32556878be6626a8876569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#abf2e26ac2b32556878be6626a8876569">getPrimitiveBoundingBox</a> (uint UUID, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;min_corner, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;max_corner) const</td></tr>
+<tr class="memdesc:abf2e26ac2b32556878be6626a8876569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the axis-aligned bounding box for a single primitive.  <a href="#abf2e26ac2b32556878be6626a8876569">More...</a><br /></td></tr>
+<tr class="separator:abf2e26ac2b32556878be6626a8876569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808527f76dec2683cbc168250c4f69be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a808527f76dec2683cbc168250c4f69be">getPrimitiveBoundingBox</a> (const std::vector&lt; uint &gt; &amp;UUID, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;min_corner, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;max_corner) const</td></tr>
+<tr class="memdesc:a808527f76dec2683cbc168250c4f69be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the axis-aligned bounding box for a group of primitives.  <a href="#a808527f76dec2683cbc168250c4f69be">More...</a><br /></td></tr>
+<tr class="separator:a808527f76dec2683cbc168250c4f69be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac46a608ec7719e4702cd861667925f1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#aac46a608ec7719e4702cd861667925f1">getObjectArea</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:aac46a608ec7719e4702cd861667925f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the one-sided surface area of an object.  <a href="#aac46a608ec7719e4702cd861667925f1">More...</a><br /></td></tr>
+<tr class="separator:aac46a608ec7719e4702cd861667925f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457ccd0bcf9870aef138b22c4a160aeb"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a457ccd0bcf9870aef138b22c4a160aeb">getObjectPrimitiveCount</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:a457ccd0bcf9870aef138b22c4a160aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the number of primitives contained in the object.  <a href="#a457ccd0bcf9870aef138b22c4a160aeb">More...</a><br /></td></tr>
+<tr class="separator:a457ccd0bcf9870aef138b22c4a160aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe8ddd10f0d34bfe0b2a4aea648442a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a4fe8ddd10f0d34bfe0b2a4aea648442a">getObjectCenter</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:a4fe8ddd10f0d34bfe0b2a4aea648442a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the Cartesian (x,y,z) point of the center of a bounding box for the object.  <a href="#a4fe8ddd10f0d34bfe0b2a4aea648442a">More...</a><br /></td></tr>
+<tr class="separator:a4fe8ddd10f0d34bfe0b2a4aea648442a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9300ee38238da38f1fcad42ef182321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1_r_g_bcolor.html">helios::RGBcolor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#aa9300ee38238da38f1fcad42ef182321">getObjectColorRGB</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:aa9300ee38238da38f1fcad42ef182321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the diffuse color of an Object.  <a href="#aa9300ee38238da38f1fcad42ef182321">More...</a><br /></td></tr>
+<tr class="separator:aa9300ee38238da38f1fcad42ef182321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb78be3138196692512373d455405551"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1_r_g_b_acolor.html">helios::RGBAcolor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#abb78be3138196692512373d455405551">getObjectColorRGBA</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:abb78be3138196692512373d455405551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the diffuse color of an Object with transparency.  <a href="#abb78be3138196692512373d455405551">More...</a><br /></td></tr>
+<tr class="separator:abb78be3138196692512373d455405551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bdd296ce410e272e6f82a41c27935d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a62bdd296ce410e272e6f82a41c27935d">setObjectColor</a> (uint ObjID, const <a class="el" href="structhelios_1_1_r_g_bcolor.html">helios::RGBcolor</a> &amp;color)</td></tr>
+<tr class="memdesc:a62bdd296ce410e272e6f82a41c27935d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the diffuse color of an Object.  <a href="#a62bdd296ce410e272e6f82a41c27935d">More...</a><br /></td></tr>
+<tr class="separator:a62bdd296ce410e272e6f82a41c27935d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e1e95cb347f0ad25008f4fd128b0ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a41e1e95cb347f0ad25008f4fd128b0ff">setObjectColor</a> (const std::vector&lt; uint &gt; &amp;ObjIDs, const <a class="el" href="structhelios_1_1_r_g_bcolor.html">helios::RGBcolor</a> &amp;color)</td></tr>
+<tr class="memdesc:a41e1e95cb347f0ad25008f4fd128b0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the diffuse color of an Object for a vector of ObjIDs.  <a href="#a41e1e95cb347f0ad25008f4fd128b0ff">More...</a><br /></td></tr>
+<tr class="separator:a41e1e95cb347f0ad25008f4fd128b0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9146e4df91eeed82989fd89a436dcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a0c9146e4df91eeed82989fd89a436dcf">setObjectColor</a> (uint ObjID, const <a class="el" href="structhelios_1_1_r_g_b_acolor.html">helios::RGBAcolor</a> &amp;color)</td></tr>
+<tr class="memdesc:a0c9146e4df91eeed82989fd89a436dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the diffuse color of an Object with transparency.  <a href="#a0c9146e4df91eeed82989fd89a436dcf">More...</a><br /></td></tr>
+<tr class="separator:a0c9146e4df91eeed82989fd89a436dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a30c9a819df9153025ef3b7e89c536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a53a30c9a819df9153025ef3b7e89c536">setObjectColor</a> (const std::vector&lt; uint &gt; &amp;ObjIDs, const <a class="el" href="structhelios_1_1_r_g_b_acolor.html">helios::RGBAcolor</a> &amp;color)</td></tr>
+<tr class="memdesc:a53a30c9a819df9153025ef3b7e89c536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the diffuse color of an Object with transparency for a vector of ObjIDs.  <a href="#a53a30c9a819df9153025ef3b7e89c536">More...</a><br /></td></tr>
+<tr class="separator:a53a30c9a819df9153025ef3b7e89c536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd4cff3b170281516dcafb3fa83b84a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#aacd4cff3b170281516dcafb3fa83b84a">getObjectTextureFile</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:aacd4cff3b170281516dcafb3fa83b84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the texture map file of an Object.  <a href="#aacd4cff3b170281516dcafb3fa83b84a">More...</a><br /></td></tr>
+<tr class="separator:aacd4cff3b170281516dcafb3fa83b84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e972c138b0626cece9eea5f018b418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#af9e972c138b0626cece9eea5f018b418">getObjectTransformationMatrix</a> (uint ObjID, float(&amp;T)[16]) const</td></tr>
+<tr class="memdesc:af9e972c138b0626cece9eea5f018b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to return the Affine transformation matrix of an Object.  <a href="#af9e972c138b0626cece9eea5f018b418">More...</a><br /></td></tr>
+<tr class="separator:af9e972c138b0626cece9eea5f018b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9627595f57c55b4c540d239fa7889e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ae9627595f57c55b4c540d239fa7889e1">setObjectTransformationMatrix</a> (uint ObjID, float(&amp;T)[16])</td></tr>
+<tr class="memdesc:ae9627595f57c55b4c540d239fa7889e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the Affine transformation matrix of an Object.  <a href="#ae9627595f57c55b4c540d239fa7889e1">More...</a><br /></td></tr>
+<tr class="separator:ae9627595f57c55b4c540d239fa7889e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d7cc0676201cf2513e7c4c87ed7481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a31d7cc0676201cf2513e7c4c87ed7481">setObjectTransformationMatrix</a> (const std::vector&lt; uint &gt; &amp;ObjIDs, float(&amp;T)[16])</td></tr>
+<tr class="memdesc:a31d7cc0676201cf2513e7c4c87ed7481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the Affine transformation matrix of an Object for a vector Object IDs.  <a href="#a31d7cc0676201cf2513e7c4c87ed7481">More...</a><br /></td></tr>
+<tr class="separator:a31d7cc0676201cf2513e7c4c87ed7481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdf67c60f6a4efc93cd9526151d5d89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#afbdf67c60f6a4efc93cd9526151d5d89">objectHasTexture</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:afbdf67c60f6a4efc93cd9526151d5d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check whether an Object has texture data.  <a href="#afbdf67c60f6a4efc93cd9526151d5d89">More...</a><br /></td></tr>
+<tr class="separator:afbdf67c60f6a4efc93cd9526151d5d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b571dd1cfd525caedcfd725162721e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a60b571dd1cfd525caedcfd725162721e">doesObjectContainPrimitive</a> (uint ObjID, uint UUID)</td></tr>
+<tr class="memdesc:a60b571dd1cfd525caedcfd725162721e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to check if an Object contains a Primitive.  <a href="#a60b571dd1cfd525caedcfd725162721e">More...</a><br /></td></tr>
+<tr class="separator:a60b571dd1cfd525caedcfd725162721e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e6824df31545c92187c6529122aada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a17e6824df31545c92187c6529122aada">overrideObjectTextureColor</a> (uint ObjID)</td></tr>
+<tr class="memdesc:a17e6824df31545c92187c6529122aada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the color in the texture map for all primitives in the Compound Object, in which case the primitives will be colored by the constant RGB color, but will apply the transparency channel in the texture to determine its shape.  <a href="#a17e6824df31545c92187c6529122aada">More...</a><br /></td></tr>
+<tr class="separator:a17e6824df31545c92187c6529122aada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58362537512f6df9028a60181d88af0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ad58362537512f6df9028a60181d88af0">useObjectTextureColor</a> (uint ObjID)</td></tr>
+<tr class="memdesc:ad58362537512f6df9028a60181d88af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">For all primitives in the Compound Object, use the texture map to color the primitives rather than the constant RGB color. This is function reverses a previous call to overrideTextureColor(). Note that using the texture color is the default behavior.  <a href="#ad58362537512f6df9028a60181d88af0">More...</a><br /></td></tr>
+<tr class="separator:ad58362537512f6df9028a60181d88af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9871bf670404adc1d952e59429ec38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a1b9871bf670404adc1d952e59429ec38">getObjectBoundingBox</a> (uint ObjID, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;min_corner, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;max_corner) const</td></tr>
+<tr class="memdesc:a1b9871bf670404adc1d952e59429ec38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the axis-aligned bounding box for a single object.  <a href="#a1b9871bf670404adc1d952e59429ec38">More...</a><br /></td></tr>
+<tr class="separator:a1b9871bf670404adc1d952e59429ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5aef932bd4b64b1cee932423172ab6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ab5aef932bd4b64b1cee932423172ab6f">getObjectBoundingBox</a> (const std::vector&lt; uint &gt; &amp;ObjID, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;min_corner, <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;max_corner) const</td></tr>
+<tr class="memdesc:ab5aef932bd4b64b1cee932423172ab6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the axis-aligned bounding box for a group of objects.  <a href="#ab5aef932bd4b64b1cee932423172ab6f">More...</a><br /></td></tr>
+<tr class="separator:ab5aef932bd4b64b1cee932423172ab6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a963fbdd1d4c3d270d2eb8f49a22b274a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a963fbdd1d4c3d270d2eb8f49a22b274a">printObjectInfo</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:a963fbdd1d4c3d270d2eb8f49a22b274a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints object properties to console (useful for debugging purposes)  <a href="#a963fbdd1d4c3d270d2eb8f49a22b274a">More...</a><br /></td></tr>
+<tr class="separator:a963fbdd1d4c3d270d2eb8f49a22b274a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc44dfce7e5dc7deaa42139795eee942"><td class="memItemLeft" align="right" valign="top"><a id="adc44dfce7e5dc7deaa42139795eee942"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#adc44dfce7e5dc7deaa42139795eee942">listObjectData</a> (uint ObjID) const</td></tr>
+<tr class="memdesc:adc44dfce7e5dc7deaa42139795eee942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return labels for all object data for this particular object. <br /></td></tr>
+<tr class="separator:adc44dfce7e5dc7deaa42139795eee942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb64e054e6dacbab27f31cd73852cc3"><td class="memItemLeft" align="right" valign="top"><a id="a7cb64e054e6dacbab27f31cd73852cc3"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a7cb64e054e6dacbab27f31cd73852cc3">listPrimitiveData</a> (uint UUID) const</td></tr>
+<tr class="memdesc:a7cb64e054e6dacbab27f31cd73852cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return labels for all primitive data for this particular primitive. <br /></td></tr>
+<tr class="separator:a7cb64e054e6dacbab27f31cd73852cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8a5e2044331158d69d6f9bd88fc0f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a6e8a5e2044331158d69d6f9bd88fc0f7">getPrimitiveSolidFraction</a> (uint UUID) const</td></tr>
 <tr class="memdesc:a6e8a5e2044331158d69d6f9bd88fc0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get fraction of primitive surface area that is non-transparent.  <a href="#a6e8a5e2044331158d69d6f9bd88fc0f7">More...</a><br /></td></tr>
 <tr class="separator:a6e8a5e2044331158d69d6f9bd88fc0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -916,24 +990,102 @@ std::vector&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a 
 <tr class="memitem:a14626fb1701c57a683418b9b9d442913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a14626fb1701c57a683418b9b9d442913">setTileObjectSubdivisionCount</a> (const std::vector&lt; uint &gt; &amp;ObjectIDs, float area_ratio)</td></tr>
 <tr class="memdesc:a14626fb1701c57a683418b9b9d442913"><td class="mdescLeft">&#160;</td><td class="mdescRight">change the subdivisions of a tile object  <a href="#a14626fb1701c57a683418b9b9d442913">More...</a><br /></td></tr>
 <tr class="separator:a14626fb1701c57a683418b9b9d442913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff851d2ce11a0c41557651301f5b88e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a3ff851d2ce11a0c41557651301f5b88e">getTileObjectCenter</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a3ff851d2ce11a0c41557651301f5b88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Cartesian (x,y,z) center position of a tile object.  <a href="#a3ff851d2ce11a0c41557651301f5b88e">More...</a><br /></td></tr>
+<tr class="separator:a3ff851d2ce11a0c41557651301f5b88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29262a91200ef24c66923d579031dd97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec2.html">helios::vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a29262a91200ef24c66923d579031dd97">getTileObjectSize</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a29262a91200ef24c66923d579031dd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the size of a tile object from the context  <a href="#a29262a91200ef24c66923d579031dd97">More...</a><br /></td></tr>
+<tr class="separator:a29262a91200ef24c66923d579031dd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a299023c2ae603944763dea3f908956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1int2.html">helios::int2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a7a299023c2ae603944763dea3f908956">getTileObjectSubdivisionCount</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a7a299023c2ae603944763dea3f908956"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the subdivision count of a tile object from the context  <a href="#a7a299023c2ae603944763dea3f908956">More...</a><br /></td></tr>
+<tr class="separator:a7a299023c2ae603944763dea3f908956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d843863d87e13f64a37c4c219a916c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a7d843863d87e13f64a37c4c219a916c1">getTileObjectNormal</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a7d843863d87e13f64a37c4c219a916c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the normal of a tile object from the context  <a href="#a7d843863d87e13f64a37c4c219a916c1">More...</a><br /></td></tr>
+<tr class="separator:a7d843863d87e13f64a37c4c219a916c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bd971561f45b17b86c18467b964401"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structhelios_1_1vec2.html">helios::vec2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a92bd971561f45b17b86c18467b964401">getTileObjectTextureUV</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a92bd971561f45b17b86c18467b964401"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the texture UV coordinates of a tile object from the context  <a href="#a92bd971561f45b17b86c18467b964401">More...</a><br /></td></tr>
+<tr class="separator:a92bd971561f45b17b86c18467b964401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad41370608389d4c423797d45dc165cf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#aad41370608389d4c423797d45dc165cf">getTileObjectVertices</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:aad41370608389d4c423797d45dc165cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the vertices of a tile object from the context  <a href="#aad41370608389d4c423797d45dc165cf">More...</a><br /></td></tr>
+<tr class="separator:aad41370608389d4c423797d45dc165cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ed7580efa323c0f5e53e97d00e16c85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhelios_1_1_sphere.html">Sphere</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a8ed7580efa323c0f5e53e97d00e16c85">getSphereObjectPointer</a> (uint ObjID) const</td></tr>
 <tr class="memdesc:a8ed7580efa323c0f5e53e97d00e16c85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> Compound Object.  <a href="#a8ed7580efa323c0f5e53e97d00e16c85">More...</a><br /></td></tr>
 <tr class="separator:a8ed7580efa323c0f5e53e97d00e16c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7a7c4f7bc9739f3249128f20dd5995"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a8e7a7c4f7bc9739f3249128f20dd5995">getSphereObjectCenter</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a8e7a7c4f7bc9739f3249128f20dd5995"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the center of a <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object from the context  <a href="#a8e7a7c4f7bc9739f3249128f20dd5995">More...</a><br /></td></tr>
+<tr class="separator:a8e7a7c4f7bc9739f3249128f20dd5995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb9555a8dde640e82246cefd1e524c7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#aceb9555a8dde640e82246cefd1e524c7">getSphereObjectRadius</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:aceb9555a8dde640e82246cefd1e524c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the radius of a <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object from the context  <a href="#aceb9555a8dde640e82246cefd1e524c7">More...</a><br /></td></tr>
+<tr class="separator:aceb9555a8dde640e82246cefd1e524c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd14a9a8eaf7e7cb12970656d7d5b4fd"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#acd14a9a8eaf7e7cb12970656d7d5b4fd">getSphereObjectSubdivisionCount</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:acd14a9a8eaf7e7cb12970656d7d5b4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the subdivision count of a <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object from the context  <a href="#acd14a9a8eaf7e7cb12970656d7d5b4fd">More...</a><br /></td></tr>
+<tr class="separator:acd14a9a8eaf7e7cb12970656d7d5b4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab26f963c75aa99d797a43860479910b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhelios_1_1_tube.html">Tube</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ab26f963c75aa99d797a43860479910b0">getTubeObjectPointer</a> (uint ObjID) const</td></tr>
 <tr class="memdesc:ab26f963c75aa99d797a43860479910b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a <a class="el" href="classhelios_1_1_tube.html">Tube</a> Compound Object.  <a href="#ab26f963c75aa99d797a43860479910b0">More...</a><br /></td></tr>
 <tr class="separator:ab26f963c75aa99d797a43860479910b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493607f1aaa3b4d671f5391a8a1e066e"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a493607f1aaa3b4d671f5391a8a1e066e">getTubeObjectSubdivisionCount</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a493607f1aaa3b4d671f5391a8a1e066e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the subdivision count of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context  <a href="#a493607f1aaa3b4d671f5391a8a1e066e">More...</a><br /></td></tr>
+<tr class="separator:a493607f1aaa3b4d671f5391a8a1e066e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a0e3fbf83f261b94b75a29300c2260"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a20a0e3fbf83f261b94b75a29300c2260">getTubeObjectNodes</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a20a0e3fbf83f261b94b75a29300c2260"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the nodes of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context  <a href="#a20a0e3fbf83f261b94b75a29300c2260">More...</a><br /></td></tr>
+<tr class="separator:a20a0e3fbf83f261b94b75a29300c2260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bf97709d96f9f40ec7535e06a5a941"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a41bf97709d96f9f40ec7535e06a5a941">getTubeObjectNodeRadii</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a41bf97709d96f9f40ec7535e06a5a941"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the node radii of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context  <a href="#a41bf97709d96f9f40ec7535e06a5a941">More...</a><br /></td></tr>
+<tr class="separator:a41bf97709d96f9f40ec7535e06a5a941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e560c624e0b1828877b4e76511525c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structhelios_1_1_r_g_bcolor.html">RGBcolor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a59e560c624e0b1828877b4e76511525c">getTubeObjectNodeColors</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a59e560c624e0b1828877b4e76511525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the node colors of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context  <a href="#a59e560c624e0b1828877b4e76511525c">More...</a><br /></td></tr>
+<tr class="separator:a59e560c624e0b1828877b4e76511525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecbb5a8cfa6764bade6e0650d2f6990"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhelios_1_1_box.html">Box</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a1ecbb5a8cfa6764bade6e0650d2f6990">getBoxObjectPointer</a> (uint ObjID) const</td></tr>
 <tr class="memdesc:a1ecbb5a8cfa6764bade6e0650d2f6990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a <a class="el" href="classhelios_1_1_box.html">Box</a> Compound Object.  <a href="#a1ecbb5a8cfa6764bade6e0650d2f6990">More...</a><br /></td></tr>
 <tr class="separator:a1ecbb5a8cfa6764bade6e0650d2f6990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8463d1e8dae8a06119d7a5b386c82d81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a8463d1e8dae8a06119d7a5b386c82d81">getBoxObjectCenter</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a8463d1e8dae8a06119d7a5b386c82d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the center of a <a class="el" href="classhelios_1_1_box.html">Box</a> object from the context  <a href="#a8463d1e8dae8a06119d7a5b386c82d81">More...</a><br /></td></tr>
+<tr class="separator:a8463d1e8dae8a06119d7a5b386c82d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83877b403ed10296e8465749ecc322fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a83877b403ed10296e8465749ecc322fd">getBoxObjectSize</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a83877b403ed10296e8465749ecc322fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the size of a <a class="el" href="classhelios_1_1_box.html">Box</a> object from the context  <a href="#a83877b403ed10296e8465749ecc322fd">More...</a><br /></td></tr>
+<tr class="separator:a83877b403ed10296e8465749ecc322fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace418f110312c50375d94bc69717f496"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1int3.html">helios::int3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ace418f110312c50375d94bc69717f496">getBoxObjectSubdivisionCount</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:ace418f110312c50375d94bc69717f496"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the subdivision count of a <a class="el" href="classhelios_1_1_box.html">Box</a> object from the context  <a href="#ace418f110312c50375d94bc69717f496">More...</a><br /></td></tr>
+<tr class="separator:ace418f110312c50375d94bc69717f496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17c1256a1f57fbae1f34e04b66b76ca8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhelios_1_1_disk.html">Disk</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a17c1256a1f57fbae1f34e04b66b76ca8">getDiskObjectPointer</a> (uint ObjID) const</td></tr>
 <tr class="memdesc:a17c1256a1f57fbae1f34e04b66b76ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a <a class="el" href="classhelios_1_1_disk.html">Disk</a> Compound Object.  <a href="#a17c1256a1f57fbae1f34e04b66b76ca8">More...</a><br /></td></tr>
 <tr class="separator:a17c1256a1f57fbae1f34e04b66b76ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e24fa157bd330e53bd007f1e343100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ac8e24fa157bd330e53bd007f1e343100">getDiskObjectCenter</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:ac8e24fa157bd330e53bd007f1e343100"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the center of a <a class="el" href="classhelios_1_1_disk.html">Disk</a> object from the context  <a href="#ac8e24fa157bd330e53bd007f1e343100">More...</a><br /></td></tr>
+<tr class="separator:ac8e24fa157bd330e53bd007f1e343100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2362dc376125ff74f94d40a69ec41241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec2.html">helios::vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a2362dc376125ff74f94d40a69ec41241">getDiskObjectSize</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a2362dc376125ff74f94d40a69ec41241"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the size of a <a class="el" href="classhelios_1_1_disk.html">Disk</a> object from the context  <a href="#a2362dc376125ff74f94d40a69ec41241">More...</a><br /></td></tr>
+<tr class="separator:a2362dc376125ff74f94d40a69ec41241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58174c5058ef51b2d0a10cb445e59350"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a58174c5058ef51b2d0a10cb445e59350">getDiskObjectSubdivisionCount</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a58174c5058ef51b2d0a10cb445e59350"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the subdivision count of a <a class="el" href="classhelios_1_1_disk.html">Disk</a> object from the context  <a href="#a58174c5058ef51b2d0a10cb445e59350">More...</a><br /></td></tr>
+<tr class="separator:a58174c5058ef51b2d0a10cb445e59350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a10781f6c1e24b226a32b1e1369f5c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhelios_1_1_polymesh.html">Polymesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a5a10781f6c1e24b226a32b1e1369f5c1">getPolymeshObjectPointer</a> (uint ObjID) const</td></tr>
 <tr class="memdesc:a5a10781f6c1e24b226a32b1e1369f5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a Polygon Mesh Compound Object.  <a href="#a5a10781f6c1e24b226a32b1e1369f5c1">More...</a><br /></td></tr>
 <tr class="separator:a5a10781f6c1e24b226a32b1e1369f5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3221051ea9c1025e8fb00d9dec01839f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhelios_1_1_cone.html">Cone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a3221051ea9c1025e8fb00d9dec01839f">getConeObjectPointer</a> (uint ObjID) const</td></tr>
 <tr class="memdesc:a3221051ea9c1025e8fb00d9dec01839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a <a class="el" href="classhelios_1_1_cone.html">Cone</a> Compound Object.  <a href="#a3221051ea9c1025e8fb00d9dec01839f">More...</a><br /></td></tr>
 <tr class="separator:a3221051ea9c1025e8fb00d9dec01839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8018b646d5575207d04f118e6797fedc"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a8018b646d5575207d04f118e6797fedc">getConeObjectSubdivisionCount</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a8018b646d5575207d04f118e6797fedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the subdivision count of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context  <a href="#a8018b646d5575207d04f118e6797fedc">More...</a><br /></td></tr>
+<tr class="separator:a8018b646d5575207d04f118e6797fedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d0ecc0613a18124629d35fb3ba83a1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a47d0ecc0613a18124629d35fb3ba83a1">getConeObjectNodes</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a47d0ecc0613a18124629d35fb3ba83a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the nodes of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context  <a href="#a47d0ecc0613a18124629d35fb3ba83a1">More...</a><br /></td></tr>
+<tr class="separator:a47d0ecc0613a18124629d35fb3ba83a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f69af17669edff10e384562697776b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ac3f69af17669edff10e384562697776b">getConeObjectNodeRadii</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:ac3f69af17669edff10e384562697776b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the node radii of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context  <a href="#ac3f69af17669edff10e384562697776b">More...</a><br /></td></tr>
+<tr class="separator:ac3f69af17669edff10e384562697776b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb520eb3285fd43c366f8c0d6149df97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#adb520eb3285fd43c366f8c0d6149df97">getConeObjectNode</a> (uint &amp;ObjectID, int number) const</td></tr>
+<tr class="memdesc:adb520eb3285fd43c366f8c0d6149df97"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a node of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context  <a href="#adb520eb3285fd43c366f8c0d6149df97">More...</a><br /></td></tr>
+<tr class="separator:adb520eb3285fd43c366f8c0d6149df97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b4989ed7de457ebdd103ab17f544fd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#ac8b4989ed7de457ebdd103ab17f544fd">getConeObjectNodeRadius</a> (uint &amp;ObjectID, int number) const</td></tr>
+<tr class="memdesc:ac8b4989ed7de457ebdd103ab17f544fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a node radius of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context  <a href="#ac8b4989ed7de457ebdd103ab17f544fd">More...</a><br /></td></tr>
+<tr class="separator:ac8b4989ed7de457ebdd103ab17f544fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2579ad5a447d7f3510d5a78c6d8c4ac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a2579ad5a447d7f3510d5a78c6d8c4ac0">getConeObjectAxisUnitVector</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a2579ad5a447d7f3510d5a78c6d8c4ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the axis unit vector of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context  <a href="#a2579ad5a447d7f3510d5a78c6d8c4ac0">More...</a><br /></td></tr>
+<tr class="separator:a2579ad5a447d7f3510d5a78c6d8c4ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c36de7f74644bd1ee871e83ced302ab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhelios_1_1_context.html#a1c36de7f74644bd1ee871e83ced302ab">getConeObjectLength</a> (uint &amp;ObjectID) const</td></tr>
+<tr class="memdesc:a1c36de7f74644bd1ee871e83ced302ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the length of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context  <a href="#a1c36de7f74644bd1ee871e83ced302ab">More...</a><br /></td></tr>
+<tr class="separator:a1c36de7f74644bd1ee871e83ced302ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae5c1fa3bae1ff170c14a4378fb8abd95"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__compoundobjects.html#gae5c1fa3bae1ff170c14a4378fb8abd95">addTileObject</a> (const <a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;center, const <a class="el" href="structhelios_1_1vec2.html">vec2</a> &amp;size, const <a class="el" href="structhelios_1_1_spherical_coord.html">SphericalCoord</a> &amp;rotation, const <a class="el" href="structhelios_1_1int2.html">int2</a> &amp;subdiv)</td></tr>
 <tr class="memdesc:gae5c1fa3bae1ff170c14a4378fb8abd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a patch that is subdivided into a regular grid of sub-patches (tiled)  <a href="group__compoundobjects.html#gae5c1fa3bae1ff170c14a4378fb8abd95">More...</a><br /></td></tr>
 <tr class="separator:gae5c1fa3bae1ff170c14a4378fb8abd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1368,7 +1520,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UUID of Voxel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03626">3626</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03644">3644</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1574,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UUID of Voxel </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03630">3630</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03648">3648</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1451,7 +1603,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>False if any primitives have been deleted from the object since creation; True otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05330">5330</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05327">5327</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1788,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ID for copied object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05411">5411</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05408">5408</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1817,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ID for copied object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05398">5398</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05395">5395</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1694,7 +1846,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UUID for copied primitive </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03746">3746</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03764">3764</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1723,7 +1875,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UUIDs for copied primitives </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03733">3733</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03751">3751</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1914,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03821">3821</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03839">3839</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1815,7 +1967,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04398">4398</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04401">4401</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1861,7 +2013,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04429">4429</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04426">4426</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1889,7 +2041,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04308">4308</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04326">4326</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1917,7 +2069,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04338">4338</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04351">4351</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1945,7 +2097,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04368">4368</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04376">4376</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -1973,7 +2125,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05380">5380</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05377">5377</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2001,7 +2153,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05374">5374</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05371">5371</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2029,7 +2181,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03710">3710</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03728">3728</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2057,7 +2209,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03704">3704</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03722">3722</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2087,6 +2239,45 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>True/false </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03062">3062</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a60b571dd1cfd525caedcfd725162721e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b571dd1cfd525caedcfd725162721e">&#9670;&nbsp;</a></span>doesObjectContainPrimitive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Context::doesObjectContainPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>UUID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to check if an Object contains a Primitive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">UUID</td><td>Universal unique identifier of primitive. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14128">14128</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2154,7 +2345,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05359">5359</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05356">5356</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2222,7 +2413,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03893">3893</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03911">3911</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2275,7 +2466,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05517">5517</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05514">5514</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2297,7 +2488,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <p>Get the IDs for all Compound Objects in the <a class="el" href="classhelios_1_1_context.html" title="Stores the state associated with simulation. ">Context</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Vector of IDs for all objects. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05363">5363</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05360">5360</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8463d1e8dae8a06119d7a5b386c82d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8463d1e8dae8a06119d7a5b386c82d81">&#9670;&nbsp;</a></span>getBoxObjectCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getBoxObjectCenter </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the center of a <a class="el" href="classhelios_1_1_box.html">Box</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_box.html">Box</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14318">14318</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2325,7 +2544,251 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06299">6299</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06317">6317</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a83877b403ed10296e8465749ecc322fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83877b403ed10296e8465749ecc322fd">&#9670;&nbsp;</a></span>getBoxObjectSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getBoxObjectSize </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the size of a <a class="el" href="classhelios_1_1_box.html">Box</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_box.html">Box</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14322">14322</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ace418f110312c50375d94bc69717f496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace418f110312c50375d94bc69717f496">&#9670;&nbsp;</a></span>getBoxObjectSubdivisionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1int3.html">helios::int3</a> Context::getBoxObjectSubdivisionCount </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the subdivision count of a <a class="el" href="classhelios_1_1_box.html">Box</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_box.html">Box</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14326">14326</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2579ad5a447d7f3510d5a78c6d8c4ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2579ad5a447d7f3510d5a78c6d8c4ac0">&#9670;&nbsp;</a></span>getConeObjectAxisUnitVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getConeObjectAxisUnitVector </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the axis unit vector of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_cone.html">Cone</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14362">14362</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c36de7f74644bd1ee871e83ced302ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c36de7f74644bd1ee871e83ced302ab">&#9670;&nbsp;</a></span>getConeObjectLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Context::getConeObjectLength </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the length of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_cone.html">Cone</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14366">14366</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb520eb3285fd43c366f8c0d6149df97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb520eb3285fd43c366f8c0d6149df97">&#9670;&nbsp;</a></span>getConeObjectNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getConeObjectNode </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get a node of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_cone.html">Cone</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14354">14354</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac3f69af17669edff10e384562697776b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3f69af17669edff10e384562697776b">&#9670;&nbsp;</a></span>getConeObjectNodeRadii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; Context::getConeObjectNodeRadii </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the node radii of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_cone.html">Cone</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14350">14350</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8b4989ed7de457ebdd103ab17f544fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b4989ed7de457ebdd103ab17f544fd">&#9670;&nbsp;</a></span>getConeObjectNodeRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Context::getConeObjectNodeRadius </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get a node radius of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_cone.html">Cone</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14358">14358</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a47d0ecc0613a18124629d35fb3ba83a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d0ecc0613a18124629d35fb3ba83a1">&#9670;&nbsp;</a></span>getConeObjectNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> &gt; Context::getConeObjectNodes </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the nodes of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_cone.html">Cone</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14346">14346</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2353,7 +2816,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06486">6486</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06504">6504</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8018b646d5575207d04f118e6797fedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8018b646d5575207d04f118e6797fedc">&#9670;&nbsp;</a></span>getConeObjectSubdivisionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Context::getConeObjectSubdivisionCount </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the subdivision count of a <a class="el" href="classhelios_1_1_cone.html">Cone</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_cone.html">Cone</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14342">14342</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2377,6 +2868,34 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classhelios_1_1_context.html#a5b9565e477a321ec7b7b9b62d43b2139">setDate()</a>, <a class="el" href="classhelios_1_1_context.html#a23f2611ed71eeefe8cf772cab98de4d4">getJulianDate()</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03283">3283</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8e24fa157bd330e53bd007f1e343100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e24fa157bd330e53bd007f1e343100">&#9670;&nbsp;</a></span>getDiskObjectCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getDiskObjectCenter </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the center of a <a class="el" href="classhelios_1_1_disk.html">Disk</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_disk.html">Disk</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14330">14330</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2404,7 +2923,63 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06383">6383</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06401">6401</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2362dc376125ff74f94d40a69ec41241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2362dc376125ff74f94d40a69ec41241">&#9670;&nbsp;</a></span>getDiskObjectSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec2.html">helios::vec2</a> Context::getDiskObjectSize </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the size of a <a class="el" href="classhelios_1_1_disk.html">Disk</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_disk.html">Disk</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14334">14334</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a58174c5058ef51b2d0a10cb445e59350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58174c5058ef51b2d0a10cb445e59350">&#9670;&nbsp;</a></span>getDiskObjectSubdivisionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Context::getDiskObjectSubdivisionCount </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the subdivision count of a <a class="el" href="classhelios_1_1_disk.html">Disk</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_disk.html">Disk</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14338">14338</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2450,7 +3025,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04210">4210</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04228">4228</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2503,7 +3078,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04245">4245</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04263">4263</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2542,7 +3117,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04280">4280</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04298">4298</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -2588,7 +3163,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04294">4294</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04312">4312</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -3550,7 +4125,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <p>Get names of XML files that are currently loaded. </p>
 <dl class="section return"><dt>Returns</dt><dd>Vector of XML files. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l11265">11265</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l11384">11384</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -3577,6 +4152,210 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="aac46a608ec7719e4702cd861667925f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac46a608ec7719e4702cd861667925f1">&#9670;&nbsp;</a></span>getObjectArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Context::getObjectArea </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to return the one-sided surface area of an object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14065">14065</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1b9871bf670404adc1d952e59429ec38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9871bf670404adc1d952e59429ec38">&#9670;&nbsp;</a></span>getObjectBoundingBox() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::getObjectBoundingBox </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>min_corner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>max_corner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the axis-aligned bounding box for a single object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">min_corner</td><td>(x,y,z) coordinate of the bounding box corner in the -x, -y and -z direction. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">max_corner</td><td>(x,y,z) coordinate of the bounding box corner in the +x, +y and +z direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14140">14140</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab5aef932bd4b64b1cee932423172ab6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5aef932bd4b64b1cee932423172ab6f">&#9670;&nbsp;</a></span>getObjectBoundingBox() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::getObjectBoundingBox </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ObjID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>min_corner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>max_corner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the axis-aligned bounding box for a group of objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjIDs</td><td>Vector of object identifiers. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">min_corner</td><td>(x,y,z) coordinate of the bounding box corner in the -x, -y and -z direction. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">max_corner</td><td>(x,y,z) coordinate of the bounding box corner in the +x, +y and +z direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14145">14145</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4fe8ddd10f0d34bfe0b2a4aea648442a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fe8ddd10f0d34bfe0b2a4aea648442a">&#9670;&nbsp;</a></span>getObjectCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getObjectCenter </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to return the Cartesian (x,y,z) point of the center of a bounding box for the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14073">14073</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa9300ee38238da38f1fcad42ef182321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9300ee38238da38f1fcad42ef182321">&#9670;&nbsp;</a></span>getObjectColorRGB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1_r_g_bcolor.html">RGBcolor</a> Context::getObjectColorRGB </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to return the diffuse color of an Object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14077">14077</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abb78be3138196692512373d455405551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb78be3138196692512373d455405551">&#9670;&nbsp;</a></span>getObjectColorRGBA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1_r_g_b_acolor.html">RGBAcolor</a> Context::getObjectColorRGBA </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to return the diffuse color of an Object with transparency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14082">14082</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a54b9c5503ad33d1dcc8f6a5c74f7ea76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54b9c5503ad33d1dcc8f6a5c74f7ea76">&#9670;&nbsp;</a></span>getObjectCount()</h2>
 
@@ -3595,7 +4374,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <p>Get the total number of objects that have been created in the <a class="el" href="classhelios_1_1_context.html" title="Stores the state associated with simulation. ">Context</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Total number of objects that have been created in the <a class="el" href="classhelios_1_1_context.html" title="Stores the state associated with simulation. ">Context</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05355">5355</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05352">5352</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4716,7 +5495,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05348">5348</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05345">5345</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a457ccd0bcf9870aef138b22c4a160aeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457ccd0bcf9870aef138b22c4a160aeb">&#9670;&nbsp;</a></span>getObjectPrimitiveCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Context::getObjectPrimitiveCount </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to return the number of primitives contained in the object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14069">14069</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4744,7 +5551,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05644">5644</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05641">5641</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4772,7 +5579,74 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05657">5657</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05654">5654</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aacd4cff3b170281516dcafb3fa83b84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacd4cff3b170281516dcafb3fa83b84a">&#9670;&nbsp;</a></span>getObjectTextureFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Context::getObjectTextureFile </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to return the texture map file of an Object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14086">14086</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af9e972c138b0626cece9eea5f018b418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e972c138b0626cece9eea5f018b418">&#9670;&nbsp;</a></span>getObjectTransformationMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::getObjectTransformationMatrix </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float(&amp;)&#160;</td>
+          <td class="paramname"><em>T</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to return the Affine transformation matrix of an Object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">T</td><td>1D vector corresponding to Primitive transformation matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14090">14090</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4800,7 +5674,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05664">5664</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05661">5661</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4830,7 +5704,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>Center position of Patch element. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the UUID passed to this function does not correspond to a Patch, an error will be thrown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03924">3924</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03942">3942</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4860,7 +5734,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>Length x width of Patch element. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the UUID passed to this function does not correspond to a Patch, an error will be thrown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03915">3915</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03933">3933</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4888,7 +5762,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06463">6463</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06481">6481</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4916,7 +5790,99 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13101">13101</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13230">13230</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abf2e26ac2b32556878be6626a8876569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2e26ac2b32556878be6626a8876569">&#9670;&nbsp;</a></span>getPrimitiveBoundingBox() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::getPrimitiveBoundingBox </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>UUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>min_corner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>max_corner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the axis-aligned bounding box for a single primitive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">UUID</td><td>Universal unique identifier of primitive </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">min_corner</td><td>(x,y,z) coordinate of the bounding box corner in the -x, -y and -z direction. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">max_corner</td><td>(x,y,z) coordinate of the bounding box corner in the +x, +y and +z direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13234">13234</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a808527f76dec2683cbc168250c4f69be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808527f76dec2683cbc168250c4f69be">&#9670;&nbsp;</a></span>getPrimitiveBoundingBox() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::getPrimitiveBoundingBox </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>UUID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>min_corner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhelios_1_1vec3.html">vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>max_corner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the axis-aligned bounding box for a group of primitives. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">UUIDs</td><td>Vector of universal unique identifiers of primitives </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">min_corner</td><td>(x,y,z) coordinate of the bounding box corner in the -x, -y and -z direction. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">max_corner</td><td>(x,y,z) coordinate of the bounding box corner in the +x, +y and +z direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13239">13239</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4944,7 +5910,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13128">13128</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13305">13305</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -4972,7 +5938,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13132">13132</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13309">13309</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -5000,7 +5966,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13136">13136</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13313">13313</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6121,7 +7087,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13105">13105</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13282">13282</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6149,7 +7115,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13097">13097</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13226">13226</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6178,7 +7144,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Fraction of non-transparent area (=1 if primitive does not have a semi-transparent texture). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13205">13205</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13382">13382</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6207,7 +7173,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Path to texture map file. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13160">13160</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13337">13337</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6236,7 +7202,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classhelios_1_1_texture.html">Texture</a> image resolution (columns x rows). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13164">13164</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13341">13341</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6265,7 +7231,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Transparency value (0 or 1) for each pixel in primitive texture map. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13184">13184</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13361">13361</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6293,7 +7259,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13172">13172</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13349">13349</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6332,7 +7298,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13109">13109</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13286">13286</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6360,7 +7326,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13083">13083</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13212">13212</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6388,7 +7354,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13123">13123</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13300">13300</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e7a7c4f7bc9739f3249128f20dd5995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7a7c4f7bc9739f3249128f20dd5995">&#9670;&nbsp;</a></span>getSphereObjectCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getSphereObjectCenter </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the center of a <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14290">14290</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6416,7 +7410,63 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06135">6135</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06153">6153</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aceb9555a8dde640e82246cefd1e524c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb9555a8dde640e82246cefd1e524c7">&#9670;&nbsp;</a></span>getSphereObjectRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Context::getSphereObjectRadius </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the radius of a <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14294">14294</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd14a9a8eaf7e7cb12970656d7d5b4fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd14a9a8eaf7e7cb12970656d7d5b4fd">&#9670;&nbsp;</a></span>getSphereObjectSubdivisionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Context::getSphereObjectSubdivisionCount </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the subdivision count of a <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_sphere.html">Sphere</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14298">14298</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6444,7 +7494,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05668">5668</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05665">5665</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6472,7 +7522,65 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05690">5690</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05693">5693</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3ff851d2ce11a0c41557651301f5b88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff851d2ce11a0c41557651301f5b88e">&#9670;&nbsp;</a></span>getTileObjectCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getTileObjectCenter </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Cartesian (x,y,z) center position of a tile object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the tile object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Center position of a <a class="el" href="classhelios_1_1_tile.html">Tile</a> Object. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the ObjID passed to this function does not correspond to a <a class="el" href="classhelios_1_1_tile.html">Tile</a> Object, an error will be thrown. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14266">14266</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7d843863d87e13f64a37c4c219a916c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d843863d87e13f64a37c4c219a916c1">&#9670;&nbsp;</a></span>getTileObjectNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> Context::getTileObjectNormal </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the normal of a tile object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the tile object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14278">14278</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6500,7 +7608,119 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06026">6026</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06033">6033</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a29262a91200ef24c66923d579031dd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29262a91200ef24c66923d579031dd97">&#9670;&nbsp;</a></span>getTileObjectSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1vec2.html">helios::vec2</a> Context::getTileObjectSize </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the size of a tile object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the tile object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14270">14270</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7a299023c2ae603944763dea3f908956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a299023c2ae603944763dea3f908956">&#9670;&nbsp;</a></span>getTileObjectSubdivisionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhelios_1_1int2.html">helios::int2</a> Context::getTileObjectSubdivisionCount </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the subdivision count of a tile object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the tile object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14274">14274</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a92bd971561f45b17b86c18467b964401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bd971561f45b17b86c18467b964401">&#9670;&nbsp;</a></span>getTileObjectTextureUV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structhelios_1_1vec2.html">helios::vec2</a> &gt; Context::getTileObjectTextureUV </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the texture UV coordinates of a tile object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the tile object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14282">14282</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aad41370608389d4c423797d45dc165cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad41370608389d4c423797d45dc165cf">&#9670;&nbsp;</a></span>getTileObjectVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> &gt; Context::getTileObjectVertices </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the vertices of a tile object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the tile object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14286">14286</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6564,7 +7784,91 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>Cartesian (x,y,z) coordinate of triangle vertices indexed at "vertex" </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the UUID passed to this function does not correspond to a Triangle, an error will be thrown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03951">3951</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03969">3969</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a59e560c624e0b1828877b4e76511525c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e560c624e0b1828877b4e76511525c">&#9670;&nbsp;</a></span>getTubeObjectNodeColors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structhelios_1_1_r_g_bcolor.html">RGBcolor</a> &gt; Context::getTubeObjectNodeColors </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the node colors of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_tube.html">Tube</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14314">14314</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a41bf97709d96f9f40ec7535e06a5a941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41bf97709d96f9f40ec7535e06a5a941">&#9670;&nbsp;</a></span>getTubeObjectNodeRadii()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; float &gt; Context::getTubeObjectNodeRadii </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the node radii of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_tube.html">Tube</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14310">14310</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a20a0e3fbf83f261b94b75a29300c2260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a0e3fbf83f261b94b75a29300c2260">&#9670;&nbsp;</a></span>getTubeObjectNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structhelios_1_1vec3.html">helios::vec3</a> &gt; Context::getTubeObjectNodes </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the nodes of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_tube.html">Tube</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14306">14306</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6592,7 +7896,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06214">6214</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l06232">6232</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a493607f1aaa3b4d671f5391a8a1e066e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493607f1aaa3b4d671f5391a8a1e066e">&#9670;&nbsp;</a></span>getTubeObjectSubdivisionCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint Context::getTubeObjectSubdivisionCount </td>
+          <td>(</td>
+          <td class="paramtype">uint &amp;&#160;</td>
+          <td class="paramname"><em>ObjectID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the subdivision count of a <a class="el" href="classhelios_1_1_tube.html">Tube</a> object from the context </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjectID</td><td>object ID of the <a class="el" href="classhelios_1_1_tube.html">Tube</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14302">14302</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6622,7 +7954,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>Center position of voxel element. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the UUID passed to this function does not correspond to a voxel, an error will be thrown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03989">3989</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l04007">4007</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6652,7 +7984,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <dl class="section return"><dt>Returns</dt><dd>Length x width x height of voxel element. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the UUID passed to this function does not correspond to a voxel, an error will be thrown. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03980">3980</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03998">3998</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6702,7 +8034,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13201">13201</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13378">13378</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6762,7 +8094,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12441">12441</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12565">12565</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6829,7 +8161,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12445">12445</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12569">12569</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6876,7 +8208,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Assumes default color of blue if no colors are specified in the .ply file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12161">12161</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12280">12280</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6930,7 +8262,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Assumes default color of blue if no colors are specified in the .ply file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12165">12165</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12284">12284</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -6983,7 +8315,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12169">12169</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12288">12288</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7043,7 +8375,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12173">12173</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12292">12292</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7083,7 +8415,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This function is based on the pugi xml parser. See <a href="www.pugixml.org">pugixml.org</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l09903">9903</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l09987">9987</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7131,6 +8463,62 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="afbdf67c60f6a4efc93cd9526151d5d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdf67c60f6a4efc93cd9526151d5d89">&#9670;&nbsp;</a></span>objectHasTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Context::objectHasTexture </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to check whether an Object has texture data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14104">14104</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a17e6824df31545c92187c6529122aada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e6824df31545c92187c6529122aada">&#9670;&nbsp;</a></span>overrideObjectTextureColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::overrideObjectTextureColor </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Override the color in the texture map for all primitives in the Compound Object, in which case the primitives will be colored by the constant RGB color, but will apply the transparency channel in the texture to determine its shape. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14132">14132</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a90df70161f5ded2f8a79e995464598e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90df70161f5ded2f8a79e995464598e0">&#9670;&nbsp;</a></span>overridePrimitiveTextureColor()</h2>
 
@@ -7155,7 +8543,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13193">13193</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13370">13370</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7184,7 +8572,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if transparency channel data exists, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13176">13176</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13353">13353</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a963fbdd1d4c3d270d2eb8f49a22b274a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963fbdd1d4c3d270d2eb8f49a22b274a">&#9670;&nbsp;</a></span>printObjectInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::printObjectInfo </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints object properties to console (useful for debugging purposes) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Object ID of the object that's information will be printed'. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13660">13660</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7212,7 +8628,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13209">13209</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13386">13386</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7376,7 +8792,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05614">5614</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05611">5611</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7422,7 +8838,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05618">5618</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05615">5615</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7468,7 +8884,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05624">5624</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05621">5621</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7514,7 +8930,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05628">5628</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05625">5625</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7567,7 +8983,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05634">5634</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05631">5631</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7620,7 +9036,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05638">5638</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05635">5635</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7666,7 +9082,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03664">3664</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03682">3682</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7712,7 +9128,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03668">3668</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03686">3686</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7758,7 +9174,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03674">3674</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03692">3692</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7804,7 +9220,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03678">3678</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03696">3696</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7857,7 +9273,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03684">3684</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03702">3702</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7910,7 +9326,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03688">3688</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03706">3706</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7949,7 +9365,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03694">3694</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03712">3712</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -7988,7 +9404,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03698">3698</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03716">3716</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -8608,6 +10024,162 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l02538">2538</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a62bdd296ce410e272e6f82a41c27935d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bdd296ce410e272e6f82a41c27935d">&#9670;&nbsp;</a></span>setObjectColor() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::setObjectColor </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1_r_g_bcolor.html">helios::RGBcolor</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to set the diffuse color of an Object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Universal unique identifier of object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>New color of object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14108">14108</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a41e1e95cb347f0ad25008f4fd128b0ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e1e95cb347f0ad25008f4fd128b0ff">&#9670;&nbsp;</a></span>setObjectColor() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::setObjectColor </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ObjIDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1_r_g_bcolor.html">helios::RGBcolor</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to set the diffuse color of an Object for a vector of ObjIDs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjIDs</td><td>Vector of identifiers of object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>New color of object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14112">14112</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0c9146e4df91eeed82989fd89a436dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9146e4df91eeed82989fd89a436dcf">&#9670;&nbsp;</a></span>setObjectColor() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::setObjectColor </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1_r_g_b_acolor.html">helios::RGBAcolor</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to set the diffuse color of an Object with transparency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>New color of object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14118">14118</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a53a30c9a819df9153025ef3b7e89c536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a30c9a819df9153025ef3b7e89c536">&#9670;&nbsp;</a></span>setObjectColor() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::setObjectColor </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ObjIDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structhelios_1_1_r_g_b_acolor.html">helios::RGBAcolor</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to set the diffuse color of an Object with transparency for a vector of ObjIDs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjIDs</td><td>Vector of identifiers of objects. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>New color of object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14122">14122</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -10691,6 +12263,84 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 </div>
 </div>
+<a id="ae9627595f57c55b4c540d239fa7889e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9627595f57c55b4c540d239fa7889e1">&#9670;&nbsp;</a></span>setObjectTransformationMatrix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::setObjectTransformationMatrix </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float(&amp;)&#160;</td>
+          <td class="paramname"><em>T</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to set the Affine transformation matrix of an Object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">T</td><td>1D vector corresponding to Primitive transformation matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14094">14094</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a31d7cc0676201cf2513e7c4c87ed7481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d7cc0676201cf2513e7c4c87ed7481">&#9670;&nbsp;</a></span>setObjectTransformationMatrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::setObjectTransformationMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; uint &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ObjIDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float(&amp;)&#160;</td>
+          <td class="paramname"><em>T</em>[16]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to set the Affine transformation matrix of an Object for a vector Object IDs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjIDs</td><td>Vector of identifiers of the objects. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">T</td><td>1D vector corresponding to Primitive transformation matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14098">14098</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a029f95ee0056f027866f8bad2fe9e48e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a029f95ee0056f027866f8bad2fe9e48e">&#9670;&nbsp;</a></span>setPrimitiveColor() <span class="overload">[1/4]</span></h2>
 
@@ -10726,7 +12376,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13140">13140</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13317">13317</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -10765,7 +12415,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13144">13144</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13321">13321</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -10804,7 +12454,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13150">13150</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13327">13327</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -10843,7 +12493,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13154">13154</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13331">13331</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -12962,7 +14612,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13087">13087</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13216">13216</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13001,7 +14651,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13091">13091</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13220">13220</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13040,7 +14690,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13113">13113</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13290">13290</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13079,7 +14729,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13117">13117</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13294">13294</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13118,7 +14768,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05700">5700</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05703">5703</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13157,7 +14807,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05827">5827</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05832">5832</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13312,7 +14962,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05604">5604</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05601">5601</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13351,7 +15001,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05608">5608</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l05605">5605</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13390,7 +15040,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03654">3654</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03672">3672</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13429,7 +15079,35 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03658">3658</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l03676">3676</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad58362537512f6df9028a60181d88af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58362537512f6df9028a60181d88af0">&#9670;&nbsp;</a></span>useObjectTextureColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Context::useObjectTextureColor </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>ObjID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For all primitives in the Compound Object, use the texture map to color the primitives rather than the constant RGB color. This is function reverses a previous call to overrideTextureColor(). Note that using the texture color is the default behavior. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ObjID</td><td>Identifier of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l14136">14136</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13457,7 +15135,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13197">13197</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13374">13374</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13485,7 +15163,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12738">12738</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12867">12867</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13513,7 +15191,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12377">12377</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12501">12501</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13559,7 +15237,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12992">12992</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13121">13121</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13612,7 +15290,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l12996">12996</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l13125">13125</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
@@ -13650,7 +15328,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l11484">11484</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_context_8cpp_source.html#l11603">11603</a> of file <a class="el" href="_context_8cpp_source.html">Context.cpp</a>.</p>
 
 </div>
 </div>
